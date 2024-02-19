@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('type');
             $table->decimal('value', 10, 2);
             $table->dateTime('date');
-            $table->string('user');
+            $table->string('username');
             $table->timestamps();
         });
     }

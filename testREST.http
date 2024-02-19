@@ -1,0 +1,30 @@
+### GET all users
+GET http://localhost:8000/users
+Accept: application/json
+
+### GET user by id
+GET http://localhost:8000/users/1
+Accept: application/json
+
+### POST insert a user
+POST http://localhost:8000/users
+Content-Type: application/json
+
+{
+    "username": "miku49hatsune",
+    "password": "113124",
+    "rol": "D"
+}
+
+### PUT update a user
+PUT http://localhost:8000/users/1
+Content-Type: application/json
+
+{
+    "username": "miku.admin",
+    "password": "1214141",
+    "rol": "admin"
+}
+
+### DELETE delete a user
+DELETE http://localhost:8000/users/9
