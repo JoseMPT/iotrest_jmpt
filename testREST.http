@@ -17,14 +17,14 @@ Content-Type: application/json
 }
 
 ### PUT update a user
-PUT http://localhost:8000/users/1
+PUT http://localhost:8000/users/12
 Content-Type: application/json
 
 {
     "username": "miku.admin",
-    "password": "1214141",
-    "rol": "admin"
+    "password": "1213213",
+    "rol": "A"
 }
 
 ### DELETE delete a user
-DELETE http://localhost:8000/users/9
+DELETE http://localhost:8000/users/129

@@ -12,7 +12,7 @@ class Actuator extends Model
      * @var string[]
      */
     protected $fillable = [
-        'id', 'name', 'value'
+        'id', 'name', 'type', 'value', 'date', 'user_id'
     ];
 
     /**

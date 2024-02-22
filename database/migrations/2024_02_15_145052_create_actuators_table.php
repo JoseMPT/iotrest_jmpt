@@ -13,8 +13,11 @@ return new class extends Migration
     {
         Schema::create('actuators', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->boolean('value');
+            $table->string('name')->unique();
+            $table->string('type');
+            $table->decimal('value', 10, 2);
+            $table->dateTime('date');
+            $table->integer('user_id');
             $table->timestamps();
         });
     }
