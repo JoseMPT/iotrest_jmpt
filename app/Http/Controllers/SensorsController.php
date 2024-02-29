@@ -39,6 +39,8 @@ class SensorsController extends Controller
         $sensor = Sensor::find($id);
         if (!$sensor) return response('', 404);
         $sensor->fill($req->all());
+        $sensor->date = date('Y-m-d H:i:s');
+        $sensor->user_id = $req->user()->id;
         $sensor->save();
 
         return $sensor;
