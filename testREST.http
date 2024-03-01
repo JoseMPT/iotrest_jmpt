@@ -1,18 +1,28 @@
+### POST Login
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "123456"
+}
+
 ### GET all users
 GET http://localhost:8000/users
-Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlhdCI6MTcwOTI3MDcwNSwiZXhwIjoxNzA5Mzc4NzA1fQ.LUU6zsJkPBaZfXT8jIL3g6eshd22OutXl8w-tFZJ04c
 
 ### GET user by id
 GET http://localhost:8000/users/1
-Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlhdCI6MTcwOTI3MDcwNSwiZXhwIjoxNzA5Mzc4NzA1fQ.LUU6zsJkPBaZfXT8jIL3g6eshd22OutXl8w-tFZJ04c
 
 ### POST insert a user
 POST http://localhost:8000/users
 Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlhdCI6MTcwOTI3MDcwNSwiZXhwIjoxNzA5Mzc4NzA1fQ.LUU6zsJkPBaZfXT8jIL3g6eshd22OutXl8w-tFZJ04c
 
 {
     "username": "miku49hatsune",
-    "password": "113124",
+    "password": "123456",
     "rol": "D"
 }
 
@@ -102,3 +112,19 @@ Content-Type: application/json
 
 ### DELETE delete a actuator
 DELETE http://localhost:8000/actuators/11
+
+
+
+### POST login
+POST http://localhost/iotrest/public/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "123456"
+}
+
+### GET users with Authorization
+GET http://localhost/iotrest/public/users
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlhdCI6MTcwOTI2OTU5OSwiZXhwIjoxNzEwNTY1NTk5fQ.JYfzdYESKcOd7SV1TRq71N9A4W9mWLnFXcRsHXSB164
