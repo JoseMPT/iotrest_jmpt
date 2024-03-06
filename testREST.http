@@ -44,14 +44,17 @@ DELETE http://localhost:8000/users/129
 ### GET all sensors
 GET http://localhost:8000/sensors
 Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlhdCI6MTcwOTY5NDc5OCwiZXhwIjoxNzA5ODAyNzk4fQ.X0wYHnSJUZd5l0uOGuzt4wwKh8zEtf5piy3R3rFjyro
 
 ### GET sensor by id
-GET http://localhost:8000/sensors/1
+GET http://localhost:8000/sensors/11
 Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlhdCI6MTcwOTY5NDc5OCwiZXhwIjoxNzA5ODAyNzk4fQ.X0wYHnSJUZd5l0uOGuzt4wwKh8zEtf5piy3R3rFjyro
 
-### POST insert a user
+### POST insert a sensor
 POST http://localhost:8000/sensors
 Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlhdCI6MTcwOTY5NDc5OCwiZXhwIjoxNzA5ODAyNzk4fQ.X0wYHnSJUZd5l0uOGuzt4wwKh8zEtf5piy3R3rFjyro
 
 {
     "name": "miku.sensor",
@@ -64,17 +67,19 @@ Content-Type: application/json
 ### PUT update a sensor
 PUT http://localhost:8000/sensors/11
 Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlhdCI6MTcwOTY5NDc5OCwiZXhwIjoxNzA5ODAyNzk4fQ.X0wYHnSJUZd5l0uOGuzt4wwKh8zEtf5piy3R3rFjyro
 
 {
     "name": "Miku.Sensor.2",
     "type": "Temperatura",
     "value": "39",
     "date": "2024-02-26T20:23:28",
-    "user_id": "9"
+    "user_id": 1
 }
 
 ### DELETE delete a sensor
 DELETE http://localhost:8000/sensors/11
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlhdCI6MTcwOTY5NDc5OCwiZXhwIjoxNzA5ODAyNzk4fQ.X0wYHnSJUZd5l0uOGuzt4wwKh8zEtf5piy3R3rFjyro
 
 
 #/********************************************************************/#
